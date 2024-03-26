@@ -97,6 +97,7 @@ class LinkedList {
 
   def removeElement(e: String): Unit = {
     var n: Node = head
+    if (n == null) return
     while (n.next != null) {
       if (n.next.item == e) {
         n.next = n.next.next
@@ -104,6 +105,7 @@ class LinkedList {
       }
       n = n.next
     }
+    head = head.next
   }
 
   def insertAfter(before: String, after: String): Unit = {
