@@ -1,6 +1,5 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-![Workflow status](https://github.com/ISC-HEI/101_Lists_lab/actions/workflows/run-gradle.yaml/badge.svg)
-
+[![CI/CD tests with Gradle](https://github.com/LordBaryhobal/101_Lists_lab/actions/workflows/run-gradle.yaml/badge.svg?branch=main)](https://github.com/LordBaryhobal/101_Lists_lab/actions/workflows/run-gradle.yaml)
 <p align="center">
   <a href="https://isc.hevs.ch">
   <img src="https://user-images.githubusercontent.com/4624112/214764929-89aa8609-c540-4cc0-9905-23886814772e.png"/>    
