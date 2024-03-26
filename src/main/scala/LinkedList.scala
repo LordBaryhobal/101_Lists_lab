@@ -30,4 +30,37 @@ class LinkedList {
 
     return s"List content (size ${getSize()}) : ${nodes.mkString(" -> ")}"
   }
+
+  def removeFirstElement(): Unit = {
+    if (head == null) return
+    head = head.next
+  }
+
+  def getLastElement(): Node = {
+    if (head == null) return null
+    var n: Node = head
+    while (n.next != null) {
+      n = n.next
+    }
+    return n
+  }
+
+  def addToEnd(element: String): Unit = {
+    val last: Node = getLastElement()
+    val n: Node = new Node(element, null)
+    if (last == null) {
+      head = n
+    } else {
+      last.next = n
+    }
+  }
+
+  def isPresent(e: String): Boolean = {
+    var n: Node = head
+    while (n != null) {
+      if (n.item == e) return true
+      n = n.next
+    }
+    return false
+  }
 }
